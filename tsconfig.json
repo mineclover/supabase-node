@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "preserveValueImports": false,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "lib": ["ESNEXT", "DOM"],
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "strict": true,
+    "plugins": [
+      {
+        "transform": "typia/lib/transform"
+      }
+    ],
+    "strictNullChecks": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"],
+  "plugins": [
+    {
+      "transform": "typia/lib/transform"
+    }
+  ],
+
+  "strictNullChecks": true
+}
