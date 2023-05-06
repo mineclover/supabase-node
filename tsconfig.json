@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
-    "target": "ES2015",
+    "target": "ES2016",
     "preserveValueImports": false,
     "module": "CommonJS",
     "moduleResolution": "node",
     "lib": ["ESNEXT", "DOM"],
     "esModuleInterop": true,
     "strict": true,
+    "outDir": "./build",
     "plugins": [
       {
         "transform": "typia/lib/transform"

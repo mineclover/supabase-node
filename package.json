@@ -1,12 +1,12 @@
 {
   "name": "supabase-node",
-  "type": "module",
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "nodemon --exec ts-node ./src/index.ts",
+    "dev": "nodemon ./build/index.js --mode development",
     "update-types": "npx supabase gen types typescript --project-id \"dblntvvagfqxjblwlfxt\" > src/types/supabase.ts",
-    "prepare": "ts-patch install"
+    "prepare": "ts-patch install",
+    "build": "rmdir /s build && tsc -w"
   },
   "repository": {
     "type": "git",
