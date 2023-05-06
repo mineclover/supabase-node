@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "tsc src/index.ts && node src/index.js",
+    "start": "nodemon --exec ts-node ./src/index.ts",
     "update-types": "npx supabase gen types typescript --project-id \"dblntvvagfqxjblwlfxt\" > src/types/supabase.ts",
     "prepare": "ts-patch install"
   },
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/mineclover/supabase-node#readme",
   "devDependencies": {
     "@types/node": "^20.0.0",
+    "nodemon": "^2.0.22",
     "ts-node": "^10.9.1",
     "ts-patch": "^2.1.0",
     "tslib": "^2.5.0",
